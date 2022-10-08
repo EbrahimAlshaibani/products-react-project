@@ -1,3 +1,7 @@
+.navbar{
+  background-color: white;
+  box-shadow: 1px 1px 5px #808080;
+}
 .carousel-item img{
   height: 95vh;
   width: 100%;

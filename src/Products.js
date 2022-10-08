@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ProductsList from "./ProductsList";
 const Products = ()=>{
     const [products,setProduct] = useState([
         {
@@ -21,7 +22,7 @@ const Products = ()=>{
         }
     ])
     return(
-        
+        <ProductsList products={products} title='Products'/>
     );
 }
 export default Products

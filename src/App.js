@@ -1,6 +1,6 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import './App.css';
 import Navbar from './Navbar';
 import Carousel from './Carousel';
 import About from './About';

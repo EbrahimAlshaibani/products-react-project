@@ -1,6 +1,7 @@
-const ProductsList = ()=>{
+const ProductsList = ({products,title})=>{
     return(
         <div className="container">
+            <h1>{title}</h1>
             <table className="table">
                 <thead>
                     <tr>

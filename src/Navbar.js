@@ -1,7 +1,7 @@
 const Navbar = ()=>{
     return(
-    <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
+<nav class="navbar navbar-expand-lg sticky-top">
+        <div className="container">
             <a className="navbar-brand" href="#">Ebrahim React</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -32,4 +32,4 @@ const Navbar = ()=>{
     );
 }
 
-export default Navbar
+export default Navbar;
