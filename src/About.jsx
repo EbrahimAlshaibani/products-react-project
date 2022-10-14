@@ -17,6 +17,7 @@ const About = ()=>{
         // console.log(this.name);
         // this.name = name;
         // console.log(this.name)
+
     }
     return(
         <div className="container">

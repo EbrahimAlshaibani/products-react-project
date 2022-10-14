@@ -1,4 +1,4 @@
-const ProductsList = ({products,title})=>{
+const ProductsList = ({products,title,deleteAction})=>{
     return(
         <div className="container">
             <h1>{title}</h1>
@@ -9,6 +9,7 @@ const ProductsList = ({products,title})=>{
                     <th scope="col">name</th>
                     <th scope="col">detail</th>
                     <th scope="col">price</th>
+                    <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -18,6 +19,9 @@ const ProductsList = ({products,title})=>{
                         <td>{product.name}</td>
                         <td>{product.detail}</td>
                         <td>{product.price}</td>
+                        <td>
+                            <button type="button" onClick={ ()=>deleteAction(product.id)} className="btn btn-danger">Delete</button>
+                        </td>
                     </tr>
                 ))}
                 </tbody>

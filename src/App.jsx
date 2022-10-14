@@ -32,6 +32,8 @@ function App() {
         <Navbar />
         <Products />
         <Carousel />
+        
+
         <About />
 
       <div className='container mt-4'>
