@@ -1,6 +1,6 @@
 const ProductsList = ({products,title,deleteAction})=>{
     return(
-        <div className="container">
+        <div className="container mt-2">
             <h1>{title}</h1>
             <table className="table">
                 <thead>

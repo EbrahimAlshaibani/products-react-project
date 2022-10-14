@@ -5,10 +5,12 @@ import Navbar from './Navbar';
 import Carousel from './Carousel';
 import About from './About';
 import Products from './Products';
+import { useState } from 'react';
 function App() {
   const name = "Ebrahim Hasan Alshiabni"
   const age = 21
   const website = "https://eshaibani.com/"
+  const [number,setNumber] = useState(0)
   const clickMe = ()=>{
     console.log('clicked')
   }
@@ -22,6 +24,7 @@ function App() {
   const addNumbers = ()=>{
     n+=1
     console.log(n)
+    setNumber(n)
   }
   const eventClickBtn = (e,name)=>{
     console.log(e.target)
@@ -44,6 +47,7 @@ function App() {
         <button type='button' className='btn btn-warning' onClick={clickMe}>Clickable</button><br/>
         <button type='button' className='btn btn-primary' onClick={ ()=>clickWithParms('Ebrahim') }>clickWithParms</button><br/>
         <button type='button' className='btn btn-danger' onClick={ ()=>clickWithTwoPrams('Ebrahim','Hasan') }>clickWithTwoPrams</button><br/>
+        <p>{number}</p>
         <button type='button' className='btn btn-dark' onClick={ addNumbers }>+</button><br/>
         <button type='button' className='btn btn-dark' onClick={ (e)=>eventClickBtn(e,'Ebrahim') }>eventClickBtn</button><br/>
       </div>
