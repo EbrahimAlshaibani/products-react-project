@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 const ProductsList = ({products,title,deleteAction})=>{
     return(
         <div className="container mt-2">
@@ -21,6 +22,9 @@ const ProductsList = ({products,title,deleteAction})=>{
                         <td>{product.price}</td>
                         <td>
                             <button type="button" onClick={ ()=>deleteAction(product.id)} className="btn btn-danger">Delete</button>
+                        </td>
+                        <td>
+                        <Link to={"/products/" + product.id} className="btn btn-primary">Show</Link>
                         </td>
                     </tr>
                 ))}

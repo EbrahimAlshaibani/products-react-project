@@ -1,9 +1,17 @@
 .navbar{
-  background-color: white;
-  box-shadow: 1px 1px 5px #808080;
+  /* position: absolute; */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 1px 1px 5px #0000006b;
+}
+.navbar .ul a{
+  color: white;
+}
+.navbar .navbar{
+  color: white;
 }
 .carousel-item img{
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
 }
